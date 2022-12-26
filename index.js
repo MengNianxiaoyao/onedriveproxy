@@ -1,3 +1,4 @@
+console.log("This procedure does not involve any illegal matters, and only proxies download traffic for download acceleration!");
 const config = {
   basic: {
     upstream: 'Your Website Addres',
