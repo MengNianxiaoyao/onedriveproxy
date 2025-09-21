@@ -1,20 +1,20 @@
 console.log("This procedure does not involve any illegal matters, and only proxies download traffic for download acceleration!");
 const config = {
   basic: {
-    upstream: 'Your Website Addres',
-    mobileRedirect: 'Your Website Addres',
+    upstream: process.env.addres,
+    mobileRedirect: process.env.addres,
   },
 
   firewall: {
-    blockedRegion: [''],
-    blockedIPAddress: [],
+    blockedRegion: process.env.blockedRegion || [''],
+    blockedIPAddress: process.env.blockedIPAddress || [],
     scrapeShield: true,
   },
 
   routes: {
-    TW: 'Your Website Addres',
-    HK: 'Your Website Addres',
-    FR: 'Your Website Addres',
+    TW: process.env.addresTW || process.env.addres,
+    HK: process.env.addresHK || process.env.addres,
+    FR: process.env.addresFR || process.env.addres,
   },
 
   optimization: {
